@@ -36,9 +36,11 @@ def Gender():
         elif gender_input == '2':
             Player_Gender = 'female'
     print('You are',Player_Gender)
+Gender()#the 'Gender()' function is called and the player is asked for their gender
 
 
 
+#character creation_end
 
 
-
+#story_start
