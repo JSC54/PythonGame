@@ -7,34 +7,38 @@ Nice = 0
 Smart = 0
 
 
-
+    #name
 Player_Name = input('Enter your name: ')
-print('Hello',Player_Name)
+print('Hello',Player_Name + '.')
 
-#character creation_end
+    #age
+Player_Age = input('Enter your age: ')
+print('You are',Player_Age,'years old.')
+
+    #Gender
+def Gender():
+    gender_input = input('''
+    What is your gender?
+        1. Male
+        2. Female
+[Type the number "1" or "2" to answer.]
+    ''')
+    Player_Gender = ''
+    if gender_input == '1':
+        Player_Gender = 'male'
+    elif gender_input == '2':
+        Player_Gender = 'female'
+    while gender_input != '1' and gender_input != '2':
+        print('[Type the number "1" or "2" to answer.]')
+        gender_input = input()
+        if gender_input == '1':
+            Player_Gender = 'male'
+        elif gender_input == '2':
+            Player_Gender = 'female'
+    print('You are',Player_Gender)
 
 
-#story_start
-print('''
 
-<-----------------Prologue_START----------------->
 
-''')
-print('My name is ' + Player_Name + '.')
-print('''
-      Up until recently, nothing really separated me from everyone else. 
-Although I have fairly good grades, a modest athletic ability, I\'m not really different 
-from anyone else. But remember; I said up until recently. A few days ago, I was watching 
-a TV show called THE FLASH, when I was suddenly struck by a bolt of lightning so strong 
-that it blew a hole right through my roof!. I was on my way to the hospital when one of 
-the first responders tending to me accidentally spilled Gatorade and Powerade and RedBull 
-all at the same time into my IV. I could feel all the energy that was pouring into my body. 
-Long story short, I go to the hospital, they find out I\'m fine, and I go home. Oh, and I 
-have superspeed and stuff.''')
-print('''
 
-<------------------Prologue_END------------------>
 
-''')
-print('test')
-print('test')
