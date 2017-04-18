@@ -37,3 +37,4 @@ print('''
 
 ''')
 print('test')
+print('test')
