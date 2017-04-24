@@ -4,8 +4,6 @@ from datetime import datetime
 #character creation_start
 
 
-
-
 Name_Confirmation_Input = ''
 while Name_Confirmation_Input == '' or Name_Confirmation_Input == 'N':
     Player_FirstName = input('Enter your first name: ')
